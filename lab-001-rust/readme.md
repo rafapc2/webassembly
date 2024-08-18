@@ -1,13 +1,14 @@
 
-rut (mac)
-1.- brew install rust
-    brew install rustup-init
-    rustup default stable
-    rustup show
+rut (mac)   
+1.- brew install rust   
+    brew install rustup-init   
+    rustup default stable  
+    rustup show  
 
-wasm-pack
-2.- curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
-    wasm-pack --version
+wasm-pack  
+2.- curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh  
+    wasm-pack --version  
 
+cargo install cargo-generate  
+wasm-pack build --target web  
 
-wasm-pack build --target web

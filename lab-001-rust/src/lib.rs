@@ -5,8 +5,13 @@ use wasm_bindgen::prelude::*;
 #[global_allocator]
 
 static ALLOC:wee_alloc:Wee_Alloc
-#[wasm_bindgen]
 
+#[wasm_bindgen]
+extern {
+    fn alert(s: &str);
+}
+
+#[wasm_bindgen]
 pub fn greet(){
     alert("Hola Rust Web Assembly")
 }
